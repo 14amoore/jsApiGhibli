@@ -29,7 +29,7 @@ getJSON("https://ghibliapi.herokuapp.com/films/", function(info) {
 // 2. print a random title in HTML
 function printGhibli(ghibliData) {
   const ghibliEl = document.querySelector(".ghibli");
-  let rando = Math.floor(Math.random() * 21);
+  let rando = Math.floor(Math.random() * 20);
   ghibliEl.innerText = ghibliData[rando].title;
 }
 
